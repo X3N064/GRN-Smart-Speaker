@@ -335,7 +335,7 @@
       "Do you want to try another set?"
     ],
     "NO_MATCH_PROMPTS_2": [
-      "I still didn't get that. Here is the question again: $session.params.currentQuestion.question"
+      "I still didn't get that. Here is the question again: \"$session.params.currentQuestion.question\""
     ],
     "NO_MATCH_PROMPTS_3": [
       "Since I'm still having trouble, I'll stop here. Try again in a few minutes."
@@ -458,10 +458,10 @@
       "And finally:"
     ],
     "NO_INPUT_PROMPTS_1": [
-      "Here is the question again: $session.params.currentQuestion.question"
+      "$session.params.currentQuestion.question"
     ],
     "NO_INPUT_PROMPTS_2": [
-      "If you said something, I didn't hear it. Here is the question: $session.params.currentQuestion.question"
+      "$session.params.currentQuestion.question"
     ],
     "NO_INPUT_PROMPTS_3": [
       "Since I'm having trouble. Let's stop here. Try again in a few minutes."
