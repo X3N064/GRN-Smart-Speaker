@@ -1,0 +1,24 @@
+handlers:
+  - name: LOAD_SETTINGS
+  - name: SETUP_QUIZ
+  - name: START_YES
+  - name: START_SKIP_CONFIRMATION
+  - name: START_NO
+  - name: START_CONFIRMATION
+  - name: QUESTION_REPEAT
+  - name: ANSWER_NO_MATCH_1
+  - name: ANSWER_HELP
+  - name: ANSWER_SKIP
+  - name: ANSWER
+  - name: PLAY_AGAIN_NO
+  - name: PLAY_AGAIN_YES
+  - name: ANSWER_HINT
+  - name: CONTINUE_YES
+  - name: CONTINUE_NO
+  - name: ANSWER_TRY_AGAIN
+  - name: QUIT
+  - name: ANSWER_DONT_KNOW
+httpsEndpoint:
+  baseUrl: >-
+    https://us-central1-babel-language-guessing-6c36b.cloudfunctions.net/flashcards_v1
+  endpointApiVersion: 2

@@ -1,0 +1,14 @@
+{
+  "title": {
+    "value": "Babel Language Guessing Game"
+  },
+  "questionsPerGame": {
+    "value": "1"
+  },
+  "questionTitle": {
+    "value": "Languages"
+  },
+  "answerTitle": {
+    "value": "Language"
+  }
+}

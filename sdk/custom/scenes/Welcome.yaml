@@ -1,0 +1,9 @@
+conditionalEvents:
+- condition: session.params.isNewUser
+  handler:
+    webhookHandler: START_CONFIRMATION
+  transitionToScene: AskStart
+- condition: "true"
+  transitionToScene: StartQuiz
+onEnter:
+  webhookHandler: LOAD_SETTINGS

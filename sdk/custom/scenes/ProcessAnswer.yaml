@@ -1,0 +1,5 @@
+conditionalEvents:
+- condition: session.params.count < session.params.limit
+  transitionToScene: AskQuestion
+- condition: "true"
+  transitionToScene: AskPlayAgain

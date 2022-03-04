@@ -1,0 +1,49 @@
+intentEvents:
+- handler:
+    webhookHandler: ANSWER_HINT
+  intent: Hint
+  transitionToScene: AskQuestion
+- handler:
+    webhookHandler: ANSWER_TRY_AGAIN
+  intent: TryAgain
+  transitionToScene: AskQuestion
+- handler:
+    webhookHandler: ANSWER_HINT
+  intent: "Yes"
+  transitionToScene: AskQuestion
+- handler:
+    webhookHandler: ANSWER_TRY_AGAIN
+  intent: "No"
+  transitionToScene: AskQuestion
+- handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: $resources.strings.main.AGAIN_HINT
+  intent: actions.intent.NO_MATCH_1
+- handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: $resources.strings.main.AGAIN_HINT
+  intent: actions.intent.NO_MATCH_2
+- handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: $resources.strings.main.AGAIN_HINT
+  intent: actions.intent.NO_INPUT_1
+- handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: $resources.strings.main.AGAIN_HINT
+  intent: actions.intent.NO_INPUT_2

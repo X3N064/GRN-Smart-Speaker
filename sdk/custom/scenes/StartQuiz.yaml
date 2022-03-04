@@ -1,0 +1,11 @@
+conditionalEvents:
+- condition: session.params.isNewUser
+  handler:
+    webhookHandler: START_YES
+  transitionToScene: AskQuestion
+- condition: "true"
+  handler:
+    webhookHandler: START_SKIP_CONFIRMATION
+  transitionToScene: AskQuestion
+onEnter:
+  webhookHandler: SETUP_QUIZ

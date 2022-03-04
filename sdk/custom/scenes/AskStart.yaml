@@ -1,0 +1,49 @@
+intentEvents:
+- handler:
+    webhookHandler: START_NO
+  intent: "No"
+  transitionToScene: actions.scene.END_CONVERSATION
+- intent: "Yes"
+  transitionToScene: StartQuiz
+- intent: Start
+  transitionToScene: StartQuiz
+- handler:
+    webhookHandler: PLAY_AGAIN_YES
+  intent: Restart
+  transitionToScene: AskQuestion
+- handler:
+    webhookHandler: START_NO
+  intent: Quit
+  transitionToScene: actions.scene.END_CONVERSATION
+- handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: $resources.strings.main.LETS_PLAY
+  intent: actions.intent.NO_MATCH_1
+- handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: $resources.strings.main.LETS_PLAY
+  intent: actions.intent.NO_MATCH_2
+- handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: $resources.strings.main.LETS_PLAY
+  intent: actions.intent.NO_INPUT_1
+- handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: $resources.strings.main.LETS_PLAY
+  intent: actions.intent.NO_INPUT_2
